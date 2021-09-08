@@ -17,7 +17,7 @@ const myNav = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" fixed="top">
+      <Navbar color="dark" dark expand="md" fixed="top" className="navbar py-3 py-lg-4">
         <NavbarBrand className="ms-4" href="/">Codess Cafe</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar >
