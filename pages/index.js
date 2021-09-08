@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="main-page">
       <Head>
         <title>Codess Cafe</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,9 +21,7 @@ export default function Home() {
         Empowering next generation of women in tech
         </p>
 
-      </main>
-     
-      <Image 
+        <Image 
 
       src="/undraw_happy_women_day_fbjt.jpg"
       height={300}
@@ -31,7 +29,11 @@ export default function Home() {
       alt="Women-logo"
 
       />
-        
+
+      </main>
+   
+      
+   
       </div>
       
       <footer>
@@ -39,6 +41,10 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+      .main-page
+      {
+        border: 2px solid;
+      }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -46,15 +52,16 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 2px solid blue;
         }
 
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 2px solid red;
         }
 
         footer {
@@ -119,16 +126,7 @@ export default function Home() {
           max-width: 800px;
           margin-top: 3rem;
         }
-
         
-
-        
-
-        
-
-        .logo {
-          height: 1em;
-        }
 
         @media (max-width: 600px) {
           .grid {
