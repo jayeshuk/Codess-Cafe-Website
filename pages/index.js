@@ -1,14 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from './components/nav'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Codess Cafe</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar/>
+      <div className="container">
       <main>
         <h1 className="title">
           Welcome to <a href="">Codess Cafe!</a>
@@ -28,10 +31,9 @@ export default function Home() {
       alt="Women-logo"
 
       />
-
+        
+      </div>
       
-      
-
       <footer>
         Made with 💖 by <a href="https://github.com/ShreyaPrasad1209"> Shreya Prasad </a>.
       </footer>
