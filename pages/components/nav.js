@@ -48,16 +48,3 @@ const myNav = (props) => {
 }
 
 export default myNav;
-
-<style jsx>
-  {
-  `
-   .navbar
-   {
-      height: 10%;
-   }
-   
-  `
-  }
-  
-</style>
