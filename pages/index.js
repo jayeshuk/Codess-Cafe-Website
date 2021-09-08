@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <div className="main-page">
+    <div>
       <Head>
         <title>Codess Cafe</title>
         <link rel="icon" href="/favicon.ico" />
@@ -31,28 +31,21 @@ export default function Home() {
       />
 
       </main>
-   
-      
-   
       </div>
       
       <footer>
-        Made with 💖 by Codess Cafe community.
+        Made with ❤️ by Codess Cafe community.
       </footer>
 
       <style jsx>{`
-      .main-page
-      {
-        border: 2px solid;
-      }
+    
         .container {
-          min-height: 100vh;
+          min-height: 90vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border: 2px solid blue;
         }
 
         main {
@@ -61,7 +54,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border: 2px solid red;
         }
 
         footer {
