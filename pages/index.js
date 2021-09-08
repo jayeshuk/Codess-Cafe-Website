@@ -33,7 +33,7 @@ export default function Home() {
       
 
       <footer>
-        Made with 💖 by <a href="https://github.com/ShreyaPrasad1209"> Shreya Prasad </a>.
+        Made with 💖 by Codess Cafe community.
       </footer>
 
       <style jsx>{`
