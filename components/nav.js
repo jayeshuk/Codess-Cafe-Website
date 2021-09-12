@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 
 
-const myNav = (props) => {
+const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -47,4 +47,4 @@ const myNav = (props) => {
   );
 }
 
-export default myNav;
+export default NavBar;
