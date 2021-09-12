@@ -119,7 +119,7 @@ return (
 
     <div>
         <Navbar loc="mentors"/>
-        <div>
+        <div className="main">
            <h1 className="text-center">Mentors</h1>
            <div id = "bb"></div>
             <div className="top-img">
@@ -148,6 +148,10 @@ return (
                 </div>
         </div>
         <style jsx>{`
+        .main{
+            margin-top:100px;
+            animation: slideIn 2s;
+        }
         .mentors{
             color:"white"
         }
@@ -164,6 +168,7 @@ return (
                display: grid;
 	grid-template-columns: 30% 30% 30%;
 	grid-gap: 1% 5%;
+    animation: slide 3s;
            }
            #bb{
                border-bottom:7px solid #1E90FF;
@@ -218,6 +223,20 @@ return (
                  transform: scale(1.0);
                }
              }
+             @keyframes slideIn{
+                 from{
+                     opacity:0;
+                     transform:rotateX(-10deg);
+                 }
+                 to{
+                     opacity:1;
+                     transfor:rotateX(0);
+                 }
+             }
+             @keyframes slide {
+                0%   { transform: translate(-300px,0px); }
+                100% { transform: translate(0px,0px); }
+              }
        `}</style>
     </div>
 )}
