@@ -8,13 +8,12 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-
+import { useRouter } from "next/router";
 
 const myNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-
+  const router = useRouter();
   return (
     <div>
       <Navbar color="dark" dark expand="md" fixed="top" className="navbar py-3 py-lg-4">
@@ -23,7 +22,7 @@ const myNav = (props) => {
         <Collapse isOpen={isOpen} navbar >
           <Nav className="ms-auto" navbar>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink href="/about" className={router.pathname == "/about" ? "active" : ""}>About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/tracks">Tracks</NavLink>
