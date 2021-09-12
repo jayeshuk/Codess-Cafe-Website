@@ -237,6 +237,25 @@ return (
                 0%   { transform: translate(-300px,0px); }
                 100% { transform: translate(0px,0px); }
               }
+              @media(max-width:800px){
+                .mentor-grid{
+                    padding:50px;
+                    margin-bottom:7%;
+                    display: grid;
+                    grid-template-columns: 45% 45%;
+                    grid-gap: 1% 5%;
+                    animation: slide 3s;
+                }
+              }
+              @media(max-width:600px){
+                .mentor-grid{
+                    padding:50px;
+                    margin-bottom:7%;
+                    display: grid;
+                    grid-template-columns: 90%;
+                    animation: slide 3s;
+                }
+              }
        `}</style>
     </div>
 )}
