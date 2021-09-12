@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/nav'
-import AboutHeader from '../components/about/header'
-import Counter from '../components/about/counter'
-import Objective from '../components/about/objective'
+import Navbar from '../../components/nav'
+import AboutHeader from './header'
+import Counter from './counter'
+import Objective from './objective'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function About() {
