@@ -1,6 +1,8 @@
 
-import Card from '../components/card'
+import Head from 'next/head'
 import Image from 'next/image'
+import Card from '../components/card'
+import Navbar from '../components/nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Mentor=()=> {
@@ -116,6 +118,7 @@ const Mentor=()=> {
 return (
 
     <div>
+        <Navbar loc="mentors"/>
         <div>
            <h1 className="text-center">Mentors</h1>
            <div id = "bb"></div>
@@ -145,12 +148,15 @@ return (
                 </div>
         </div>
         <style jsx>{`
+        .mentors{
+            color:"white"
+        }
            h1{
            
                margin-bottom:0px;
                margin-block-start: 0;
-    margin-block-end: 0;
-    font-size:40px;
+                margin-block-end: 0;
+                font-size:40px;
            }
            .mentor-grid{
                padding:50px;

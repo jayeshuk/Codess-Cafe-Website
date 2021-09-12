@@ -12,7 +12,6 @@ import {
 
 const myNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
@@ -29,7 +28,7 @@ const myNav = (props) => {
               <NavLink href="/tracks">Tracks</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/mentors">Mentors</NavLink>
+              <NavLink href="/mentors" className={props.loc=="mentors"?"active":""}>Mentors</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/testimonials">Testimonials</NavLink>
