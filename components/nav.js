@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 import { useRouter } from "next/router";
 
-const myNav = (props) => {
+const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const router = useRouter();
@@ -31,7 +31,7 @@ const myNav = (props) => {
               <NavLink href="/tracks">Tracks</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/mentors">Mentors</NavLink>
+              <NavLink href="/mentors" className={props.loc=="mentors"?"active":""}>Mentors</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/testimonials">Testimonials</NavLink>
@@ -49,4 +49,4 @@ const myNav = (props) => {
   );
 }
 
-export default myNav;
+export default NavBar;
