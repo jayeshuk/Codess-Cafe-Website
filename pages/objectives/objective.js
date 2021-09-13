@@ -8,7 +8,7 @@ const FeatureBox = (props) => {
     {
       props.features.map((feature, key) =>
       (feature.id % 2 !== 0) ?
-      <Animated key={key} animationIn={'slideInLeft'} animationInDelay={key+10}>
+      <Animated key={key} animationIn={'slideInLeft'} animationInDelay={key+1000}>
         <Row key={key} className={feature.id === 1 ? "align-items-center" : "align-items-center"}>
           <Col md={5} >
             <div>
@@ -65,7 +65,9 @@ return (
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
             <div className="title text-center mb-5">
-              <h3 className="font-weight-normal text-dark"><span className="text-warning">Objectives</span></h3>
+            {
+              //<h3 className="font-weight-normal text-dark">Our <span className="text-warning">Objectives</span></h3>
+            }
               
             </div>
           </Col>

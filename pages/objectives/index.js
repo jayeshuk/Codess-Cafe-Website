@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from '../../components/nav'
-import AboutHeader from './header'
-import Counter from './counter'
+import ObjectiveHeader from './header';
+import Objective from './objective'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function About() {
@@ -16,8 +15,8 @@ export default function About() {
       <Navbar/>
       
       <div className="fluid" style={{marginTop: "8em"}}>
-      <AboutHeader/>
-      <Counter/>
+        <ObjectiveHeader/>
+      <Objective/>
       </div>
       
       <footer>

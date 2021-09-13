@@ -25,6 +25,9 @@ const myNav = (props) => {
               <NavLink href="/about" className={router.pathname == "/about" ? "active" : ""}>About</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/objectives" className={router.pathname == "/objectives" ? "active" : ""}>Objectives</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/tracks">Tracks</NavLink>
             </NavItem>
             <NavItem>
