@@ -7,8 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Mentor=()=> {
 
-    const mentors_r1 = [
+    const mentors = [
         {
+            category:"Competitive Programming",
             name:"Aarnav Jindal",
             image:"https://codess.cafe/images/mentor/14.jpg",
             position:"SDE",
@@ -16,6 +17,7 @@ const Mentor=()=> {
             education:"Founder, Codess.Cafe"
         },
         {
+            category:"Open-source",
             name:"Aditi Aggrawal",
             image:"https://codess.cafe/images/mentor/8.jpg",
             position:"SDE intern",
@@ -23,6 +25,7 @@ const Mentor=()=> {
             education:"IT, Delhi Technological University"
         },
         {
+            category:"Technical Interview Preparation",
             name:"Aeshna Jain",
             image:"https://codess.cafe/images/mentor/6.jpg",
             position:"SDE intern",
@@ -30,6 +33,7 @@ const Mentor=()=> {
             education:"IT, Indira Gandi Delhi Technological University for Women"
         },
         {
+            category:"Resume Reviews",
             name:"Aiman Siddiqua",
             image:"https://codess.cafe/images/mentor/0.jpg",
             position:"SDE Intern",
@@ -37,6 +41,7 @@ const Mentor=()=> {
             education:"MCE, Delhi Technological University"
         },
         {
+            category:"DSA Preparation",
             name:"Akanksha Tanwar",
             image:"https://codess.cafe/images/mentor/2.jpg",
             position:"SDE intern",
@@ -44,6 +49,7 @@ const Mentor=()=> {
             education:"IT, Delhi Technological University"
         },
         {
+            category:"CP",
             name:"Chitra Singla",
             image:"https://codess.cafe/images/mentor/1.jpg",
             position:"SDE intern",
@@ -51,6 +57,7 @@ const Mentor=()=> {
             education:"CSE, Delhi Technological University"
         },
         {
+            category:"Core subject Preparation",
             name:"Deepti Aggarwal",
             image:"https://codess.cafe/images/mentor/9.jpg",
             position:"SDE",
@@ -58,6 +65,7 @@ const Mentor=()=> {
              education:"CSE, Delhi Technological University"
         },
         {
+            category:"Open source",
             name:"Joshika",
             image:"https://codess.cafe/images/mentor/4.jpg",
             position:"SDE",
@@ -65,6 +73,7 @@ const Mentor=()=> {
             education:"CSE, Indian Institute Of Technology, Patna"
         },
         {
+            category:"Open-Source",
             name:"Kirti Dabas",
             image:"https://codess.cafe/images/mentor/10.jpg",
             position:"SDE Intern",
@@ -72,6 +81,7 @@ const Mentor=()=> {
             education:"CSE, Delhi Technological University"
         },
         {
+            category:"Technical-Interview Preparation",
             name:"Krati Garg",
             image:"https://codess.cafe/images/mentor/7.jpg",
             position:"SDE Intern",
@@ -79,6 +89,7 @@ const Mentor=()=> {
             education:"CSE, Delhi Technological University"
         },
         {
+            category:"Technical interview Preparation",
             name:"Ojasvi Tyagi",
             image:"https://codess.cafe/images/mentor/11.jpg",
             position:"SDE intern",
@@ -86,6 +97,7 @@ const Mentor=()=> {
             education:"CSE, Indira Gandhi Delhi Technological University for Women"
         },
         {
+            category:"Open Source",
             name:"Prachi Singhal",
             image:"https://codess.cafe/images/mentor/3.jpg",
             position:"SDE intern",
@@ -93,6 +105,7 @@ const Mentor=()=> {
             education:"CSE, Mody University"
         },
         {
+            category:"Competitive programming",
             name:"Radhika Patwari",
             image:"https://codess.cafe/images/mentor/12.jpg",
             position:"SDE Intern",
@@ -100,6 +113,7 @@ const Mentor=()=> {
             education:"CSE, Indian Institute Of technology, Khadagpur"
         },
         {
+            category:"open_source",
             name:"Sangeeta Mishra",
             image:"https://codess.cafe/images/mentor/13.jpg",
             position:"SDE Intern",
@@ -108,11 +122,12 @@ const Mentor=()=> {
 
         },
         {
+            category:"competitive programming",
             name:"Sanskriti Singhal",
-                            image:"https://codess.cafe/images/mentor/5.jpg",
-                            position:"SDE Intern",
-                            company:"Google",
-                            education:"SE, Delhi Technological University"
+            image:"https://codess.cafe/images/mentor/5.jpg",
+            position:"SDE Intern",
+            company:"Google",
+            education:"SE, Delhi Technological University"
         }
     ]
 return (
@@ -138,10 +153,8 @@ return (
                 <div className="mentor-grid">
                    
                  
-                    { mentors_r1.map(mentor => (
-                         
-                                <Card mentor={mentor}/>
-                            
+                    { mentors.map(mentor => (
+                        <Card key={mentor.category} mentor={mentor}/>
                     ))
                     }
                     
@@ -226,7 +239,7 @@ return (
              @keyframes slideIn{
                  from{
                      opacity:0;
-                     transform:rotateX(-10deg);
+                     transform:rotateX(-90deg);
                  }
                  to{
                      opacity:1;
