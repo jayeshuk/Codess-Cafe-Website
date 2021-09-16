@@ -6,7 +6,7 @@ import Navbar from '../components/nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Mentor=()=> {
-    const mentors = require("./mentors.json");
+    const mentors = require("../data/mentors.json");
     const [category, setCategory] = useState("");
 
     const handleCategoryChange = (event) => {
