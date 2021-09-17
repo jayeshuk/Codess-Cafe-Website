@@ -14,22 +14,10 @@ export default function Home() {
       <div className="container">
       <main>
         <h2 className="title">
-          Tracks<br/><a href="">at Codess Cafe!</a>
+          Tracks
         </h2>
 
-        <p className="description">
-        Empowering next generation of women in tech
-        </p>
-
-        <Image 
-
-      src="/undraw_happy_women_day_fbjt.jpg"
-      height={300}
-      width={300}
-      alt="Women-logo"
-
-      />
-
+        
       </main>
       </div>
       
