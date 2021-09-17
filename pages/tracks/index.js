@@ -13,11 +13,7 @@ export default function Home() {
       <Navbar/>
       <div className="container">
       <main>
-        <h2 className="title">
-          Tracks
-        </h2>
-
-        
+        <h2 className="title">Tracks</h2>        
       </main>
       </div>
       
